@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     private InputAction _jumpAction;
     private InputAction _moveAction;
     private static readonly int Speed = Animator.StringToHash("Speed");
-    private static readonly int Grounded = Animator.StringToHash("grounded");
+    private static readonly int Grounded = Animator.StringToHash("Grounded");
 
     private void Awake()
     {
