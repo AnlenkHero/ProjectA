@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51e8cfe7-d778-4c52-8736-8266afe8296c" name="Changes" comment="" />
+    <list default="true" id="51e8cfe7-d778-4c52-8736-8266afe8296c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Player Animator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player Animator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +60,13 @@
       <updated>1675245563329</updated>
       <workItem from="1675245565222" duration="13398000" />
       <workItem from="1675325977049" duration="14560000" />
+      <workItem from="1675369354793" duration="653000" />
+      <workItem from="1675622153013" duration="1040000" />
+      <workItem from="1675626734736" duration="832000" />
+      <workItem from="1676047344318" duration="1263000" />
+      <workItem from="1676105226119" duration="599000" />
+      <workItem from="1676114420582" duration="10064000" />
+      <workItem from="1676381983092" duration="4654000" />
     </task>
     <servers />
   </component>
@@ -65,6 +76,29 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

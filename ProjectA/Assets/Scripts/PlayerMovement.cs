@@ -1,12 +1,13 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
     private CharacterController controller;
-    [Tooltip("GameObject attached at the lowest Y position to this GameObject")]
     [SerializeField]
     private float playerSpeed = 2.0f;
     [SerializeField]
@@ -15,13 +16,16 @@ public class PlayerMovement : MonoBehaviour
     private float gravityValue = -9.81f;
     [SerializeField]
     private PlayerInput playerInput;
+    [SerializeField]
+    private float smoothInputSpeed;
     
     public Animator animator;
     private Vector3 _playerVelocity;
     private bool _isGrounded=true;
     private bool _ableToMakeADoubleJump = true;
-    
 
+    private Vector2 _smoothInputVelocity;
+    private Vector2 _currentInputVector;
     private InputAction _jumpAction;
     private InputAction _moveAction;
     private static readonly int Speed = Animator.StringToHash("Speed");
@@ -42,7 +46,9 @@ public class PlayerMovement : MonoBehaviour
         }
 
         Vector2 input = _moveAction.ReadValue<Vector2>();
-        _playerVelocity.x = input.x*playerSpeed;
+        //Makes input not straight(0/1) it slows down and speeds up linearly if its not necessary use input.x instead of _currentInputVector.x in playerVelocity.x
+        _currentInputVector = Vector2.SmoothDamp(_currentInputVector, input, ref _smoothInputVelocity, smoothInputSpeed);
+        _playerVelocity.x = _currentInputVector.x*playerSpeed;
 
         if (_jumpAction.triggered && _isGrounded)
         {
